@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Data</title>
+    <link rel="stylesheet" href="send.css">
+</head>
+<body>
+    <header>
+        <h1>Send Data</h1>
+    </header>
+    <main>
+        <section class="connection">
+            <h2>Connection Number</h2>
+            <input type="text" id="connectionNumber" placeholder="Enter connection number">
+        </section>
+        <section class="data">
+            <h2>Upload Data</h2>
+            <form id="dataForm">
+                <input type="file" id="fileInput" name="fileInput" accept=".txt,.pdf,.doc,.docx,.png,.jpg,.jpeg" multiple>
+                <button type="submit">Upload</button>
+            </form>
+            <section class="files">
+                <h2>Files Selected</h2>
+                <div id="fileList"></div> <!-- Container to display selected files -->
+            </section>
+        </section>
+        <div class="container">
+            <h1>Scan QR Codes</h1>
+            <div class="section">
+                <div id="my-qr-reader">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Data Sharing</p>
+    </footer>
+    <script src="https://unpkg.com/html5-qrcode"></script>    
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-storage-compat.js"></script>
+    <script src="send.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    background-color: #2196F3; /* Blue */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+
+/* Main Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 1em; /* Add some padding to the left and right */
+}
+section {
+    background-color: #fff;
+    padding: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2em; /* Add some margin to the top */
+}
+section h2 {
+    margin-top: 0;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #2196F3; /* Blue */
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+.btn:hover {
+    background-color: #0e81d1; /* Darker Blue */
+    color: #fff; /* Make text white on hover */
+
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2196F3; /* Blue */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+@media (max-width: 600px) {
+    main {
+        padding: 1em; /* Reduce padding on smaller screens */
+    }
+    section {
+        padding: 1em; /* Reduce padding on smaller screens */
+    }
+}

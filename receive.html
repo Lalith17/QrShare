@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receive Data</title>
+    <link rel="stylesheet" href="receive.css">
+</head>
+<body>
+    <header>
+        <h1>Receive Data</h1>
+    </header>
+    <main>
+        <section class="connection">
+            <h2>Connection Code</h2>
+            <p id="connectionCode"></p>
+            <button id="fetchButton">Fetch Files</button>
+        </section>
+        <div class="sqrcode"></div> 
+        <div class="qrcode"></div>       
+        <section class="files">
+            <h2>Files</h2>
+            <ul id="fileList"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Data Sharing</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>    
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-storage-compat.js"></script>
+    <script src="receive.js"></script>
+</body>
+</html>
